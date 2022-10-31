@@ -6,7 +6,24 @@ const cors = require("cors");
 const morgan = require("morgan");
 port = 3000;
 
+app.set('view engine', 'ejs')
+app.use(express.static(__dirname + '/public'));
+// app.use(express.static("public"));
 
+
+// Khởi tạo blog routes
+let blogRouter = require("./routes/blogs.routes")
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.get('/upload', (req,res)=>{
+  res.render('upload')
+})
+
+// Sử dụng blog routes
+app.use("/blogs", blogRouter);
 
 // listen on port
 app.listen(port, () => {

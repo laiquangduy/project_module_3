@@ -1,0 +1,16 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.container{
+    background-color: #575757;
+}
+.upload-box{
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 10px;
+    
+}

@@ -1,0 +1,172 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ion-icon {
+    font-size: 28px;
+  }
+input{
+    border: none;
+    outline: none;
+}
+
+img{
+    width: 469px;
+    height: 590px;
+}
+.nav-left{
+    width: 200px;
+    border-right: solid 1px #E0E0E0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* position: absolute; */
+    position: fixed;
+   
+    
+    
+}
+.nav-middle{
+    /* flex-grow: 1; */
+    height: 515px;
+    /* flex-grow: 3; */
+}
+.insta-logo{
+    width: 103px;
+    height: 29px;
+}
+.nav-ava{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.nav-btn{
+    border-radius: 99px;
+    margin: 8px 0px;
+    padding:8px;
+    display: flex;
+    align-items: center;
+    
+}
+.nav-btn:hover{
+    background-color: #FAFAFA;
+}
+.nav-title{
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.home-page{
+margin-left: 500px;
+/* display: inline-block; */
+/* position: relative; */
+}
+
+.post{
+    border: solid 1px #E0E0E0;
+    border-radius: 5px;
+    width: 470px;
+    margin: 10px;
+}
+.post-top{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    padding: 10px;
+
+}
+.post-top-user{
+    margin-left: 10px;
+    /* align-items: stretch; */
+    padding-right: 330px;
+    font-weight: 500;
+
+    /* display: block; */
+}
+.post-caption-user{
+    font-weight: 500;
+    display: inline-block;
+}
+.post-view-comment{
+    color: #969EB8;
+}
+.post-dot{
+    border-radius: 50%;
+    /* padding-left: 320px; */
+}
+.post-ava{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.post-interact{
+    display: flex;
+    margin: 4px;
+}
+.post-caption-body{
+    margin: 10px;
+}
+.post-add-comment{
+    display: flex;
+    border-top: 1px solid #F1F1F1;
+    align-items: center;
+    padding: 5px;
+    
+
+}
+.post-icon-comment{
+    padding: 8px 12px 8px 0px;
+}
+.post-like{
+    font-weight: 500;
+    margin: 10px;
+}
+.icon-save{
+    padding-left: 345px;
+}
+.icon-interact{
+    padding: 8px;
+}
+.icon-interact-1{
+    padding: 8px 8px 8px 290px;
+}
+
+/* user-detail */
+.user-box{
+    margin-left:1000px;
+    position:fixed;
+    top: 0px;
+}
+.user-info{
+    border-radius: 5px;
+    border: solid 1px #E0E0E0;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+.user-name{
+    font-weight: 600;
+}
+.user-ava{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.user-detail{
+    display: flex;
+}
+.user-number{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}

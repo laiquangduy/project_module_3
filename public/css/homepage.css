@@ -3,6 +3,7 @@
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    /* font-family: "Roboto", sans-serif; */
 }
 ion-icon {
     font-size: 28px;
@@ -35,8 +36,8 @@ img{
     /* flex-grow: 3; */
 }
 .insta-logo{
-    width: 103px;
-    height: 29px;
+    width: 120px;
+    height: 43px;
 }
 .nav-ava{
     height: 20px;

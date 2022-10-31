@@ -13,6 +13,9 @@ app.use(express.static(__dirname + '/public'));
 
 // Khởi tạo blog routes
 let blogRouter = require("./routes/blogs.routes")
+let userRouter = require('./routes/users.routes');
+let authRouter = require('./routes/auth.routes')
+// const { use } = require("./routes/blogs.routes");
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
@@ -24,6 +27,8 @@ app.get('/upload', (req,res)=>{
 
 // Sử dụng blog routes
 app.use("/blogs", blogRouter);
+app.use("/",authRouter);
+
 
 // listen on port
 app.listen(port, () => {

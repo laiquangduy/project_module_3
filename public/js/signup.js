@@ -66,3 +66,29 @@ darkmode_toggle.onclick = (e) => {
     ? "Lightmode"
     : "Darkmode";
 };
+
+//-------- Register-------
+let api = "http://127.0.0.1:3000/";
+let form = document.getElementById("register-form");
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+  let emailr = form.email.value;
+  let passwordr = form.password.value;
+  let namer = form.name.value;
+  let usernamer = form.username.value;
+  let data = {emailr,passwordr,namer,usernamer}
+
+  fetch(api + "auth/register", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      console.log("Hello world");
+      
+    })
+    .catch((err) => console.log(err));
+});

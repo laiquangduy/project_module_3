@@ -56,6 +56,17 @@ img{
 .nav-btn:hover{
     background-color: #FAFAFA;
 }
+.nav-btn-create{
+    border-radius: 99px;
+    margin: 8px 0px;
+    padding:8px;
+    border: none;
+    background-color: white;
+    display: block;
+}
+.nav-btn-create:hover{
+    background-color: #FAFAFA;
+}
 .nav-title{
     padding-left: 10px;
     display: inline-block;
@@ -170,4 +181,33 @@ margin-left: 500px;
     flex-direction: column;
     align-items: center;
     padding: 5px;
+}
+
+.create-ava-box{
+    display: flex;
+    margin: 16px;
+}
+.create-ava{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.create-textarea{
+    border: none;
+    outline: none;
+    padding: 3px 16px;
+
+}
+.create-info{
+    display: flex;
+    flex-direction: column;
+}
+.create-share{
+    color: #00A2F8;
+    background-color: white;
+    border: none;
+}
+.create-smile{
+    margin-left: 16px;
 }

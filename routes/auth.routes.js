@@ -1,10 +1,15 @@
 const express = require("express");
-
 const router = express.Router();
-const authController = require('../controllers/auth.controller')
+const userController = require("../controllers/users.controller");
+const authController = require("../controllers/auth.controller");
 
+//define router
+// "/register" --> sử dụng user.controller createUser
+router.get("/register", authController.renderRegister);
+router.post("/register", userController.createOne);
+router.get("/login", authController.renderLogin);
+router.post("/login", authController.login);
 
-router.get('/login',authController.logIn)
-router.get('/signup',authController.signUp)
+router.get("/logout", authController.logout);
 
-module.exports=router;
+module.exports = router;

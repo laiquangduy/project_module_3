@@ -6,7 +6,8 @@
     
 }
 .container{
-    background-color: #575757;
+    /* background-color: #575757; */
+    display: flex;
 }
 .upload-box{
     border: solid 1px black;
